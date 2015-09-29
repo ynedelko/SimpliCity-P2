@@ -1,16 +1,6 @@
-<div class="panel panel-default">
-  <div class="panel-heading bordered-title">
-    <h3 class="panel-title text-center">{{listing.title}}</h3>
-  </div>
-  <div class="panel-body">
-    {{listing.body}}
-  </div>
-  <div class="panel-footer">
-    <span class="timestamps">Posted on: {{format-date listing.timestamp}} in {{listing.category.name}} by {{listing.owner}}</span>
-    <div class="edit-listing">
-      <span {{action 'listingUpdate' listing}} class="glyphicon glyphicon-wrench"></span> |
-      <span {{action 'listingDestroy' listing}} class="glyphicon glyphicon-remove-circle"></span></div>
-  </div>
-</div>
-
+{{#if showUpdateForm}}
+  {{listing-tile-update listing=listing listingUpdate='listingUpdate'}}
+{{else}}
+  {{listing-tile-view listing=listing showUpdateForm='showUpdateForm' listingDestroy='listingDestroy'}}
+{{/if}}
 {{yield}}

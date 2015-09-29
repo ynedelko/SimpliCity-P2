@@ -1,0 +1,13 @@
+<div class="panel panel-default">
+  <div class="panel-heading bordered-title">
+    <h3 class="panel-title text-center">{{input value=listing.title}}</h3>
+  </div>
+  <div class="panel-body">
+    {{textarea cols="30" rows="10" value=listing.body}}
+    <br>
+    <span class='glyphicon glyphicon-ok edit-okay text-center' {{action 'listingUpdate' listing}}></span>
+  </div>
+  <div class="panel-footer">
+    <span class="timestamps">Posted on: {{format-date listing.timestamp}} in {{listing.category.name}} by {{listing.owner}}</span>
+  </div>
+</div>

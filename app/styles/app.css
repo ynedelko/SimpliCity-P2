@@ -57,3 +57,32 @@ body {
 .edit-listing {
   float: right;
 }
+
+.category-listings {
+  list-style-type: none;
+}
+
+.edit-okay {
+  font-size: 5rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  border: 2px solid black;
+  padding: 0.5rem;
+}
+
+.glyphicon:hover {
+  -webkit-transform: scale(1.25, 1.25);
+  cursor: pointer;
+}
+
+@media (max-width: 350px) {
+  .edit-listing {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    float: left;
+  }
+
+  .panel-footer {
+    height: 7rem;
+  }
+}
