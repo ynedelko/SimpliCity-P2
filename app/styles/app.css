@@ -1,6 +1,7 @@
 html,
 body {
   height:100%;
+  font-family: 'Roboto', sans-serif;
 }
 .site-footer {
   margin-top:100%;
@@ -10,3 +11,42 @@ body {
   background-color: white;
   border: 1px solid #5E5E5E;
 }
+
+.timestamps {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.navbar {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 600;
+}
+
+.tile-title {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+}
+
+.tile-title > a {
+  color: black;
+}
+
+.panel-title {
+  background-color: white;
+}
+
+.panel-default > .panel-heading {
+  background-color: white;
+}
+.panel-default > .panel-footer {
+  background-color: white;
+}
+
+.panel-default > .panel-footer, .panel-body, .panel-heading{
+  border-left: 2px solid black;
+
+}
+
+.panel-default > .panel-heading > .bordered-title {
+  border-left: 2px solid black !important;
+  }
