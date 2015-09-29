@@ -9,6 +9,8 @@ Router.map(function() {
   this.route('about');
   this.route('new-category');
   this.route('new-listing');
+  this.route('category', {path: '/category/:category_id'});
+  this.route('listing', {path: '/listing/:listing_id'});
 });
 
 export default Router;

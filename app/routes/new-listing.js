@@ -8,7 +8,6 @@ export default Ember.Route.extend({
   actions: {
     addListing(params) {
       // var ourCategory = this.store.findAll('category')
-      var route = this;
       var newListing = this.store.createRecord('listing', params);
       newListing.save();
       params.category.save();
