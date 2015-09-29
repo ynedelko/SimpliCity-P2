@@ -1,0 +1,12 @@
+html,
+body {
+  height:100%;
+}
+.site-footer {
+  margin-top:100%;
+}
+
+.well {
+  background-color: white;
+  border: 1px solid #5E5E5E;
+}

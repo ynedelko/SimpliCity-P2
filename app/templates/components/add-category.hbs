@@ -1,0 +1,14 @@
+<h2>Add New Category</h2>
+<hr>
+<form>
+  <div class="form-group">
+    <label for="Name">Name of Category:</label>
+    {{input type="text" name="name" value=name placeholder="Groceries"}}
+  </div>
+  <div class="form-group">
+    <label for="Secret">Secret for Category:</label>
+    {{input type="text" name="secret" value=secret placeholder="Bananas"}}
+  </div>
+  <button class="btn btn-primary btn-xs"{{action 'addCategory'}}>Add Category</button>
+</form>
+{{yield}}

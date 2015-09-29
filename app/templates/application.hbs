@@ -1,0 +1,25 @@
+<header>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <h1>SimpliCity</h1>
+      <div class="header-routes">
+        <ul class="nav navbar-nav">
+          <li> {{#link-to 'index'}}Home{{/link-to}} </li>
+          <li> {{#link-to 'about'}}About{{/link-to}} </li>
+          <li> {{#link-to 'new-category'}}New Category{{/link-to}} </li>
+          <li> {{#link-to 'new-listing'}}New Listing{{/link-to}} </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="container">
+  {{outlet}}
+</div>
+
+
+<footer class="site-footer">
+  <hr>
+  <p>Adulthood made simple.</p>
+</footer>

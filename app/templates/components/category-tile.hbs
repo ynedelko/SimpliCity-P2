@@ -1,0 +1,14 @@
+<div class="category-tile">
+  <div class="well">
+    {{category.name}}
+    <div class="hover-show-listing">
+      <ul>
+        {{#each category.listings as |listing|}}
+          <li>{{listing.title}}</li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+
+</div>
+{{yield}}
