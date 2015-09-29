@@ -42,11 +42,18 @@ body {
   background-color: white;
 }
 
-.panel-default > .panel-footer, .panel-body, .panel-heading{
-  border-left: 2px solid black;
-
+.panel-default > .panel-footer, .panel-body {
+  border-left: 0.3rem solid black;
 }
 
-.panel-default > .panel-heading > .bordered-title {
-  border-left: 2px solid black !important;
-  }
+.panel-default > .panel-heading {
+  border-left: 0.3rem solid black;
+}
+
+.panel-default {
+  border-right: none;
+}
+
+.edit-listing {
+  float: right;
+}
